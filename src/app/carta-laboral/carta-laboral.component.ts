@@ -249,8 +249,8 @@ export class CartaLaboralComponent implements OnInit {
     notaExpedicion = notaExpedicion.replace("{mes}", mes.toString());
     ano = fecha.getFullYear();
     notaExpedicion = notaExpedicion.replace("{ano}", ano.toString());
-    pdf.add(new Txt(notaExpedicion).margin([50, 100, 0, 0]).end);
-    pdf.add(new Txt("Cordialmente,").margin([50, 80, 0, 0]).end);
+    pdf.add(new Txt(notaExpedicion).margin([50, 80, 0, 0]).end);
+    pdf.add(new Txt("Cordialmente,").margin([50, 30, 0, 0]).end);
     pdf.add(
       await new Img(ObjConfigCL.imagenFirmaDir)
         .margin([50, 0, 0, 0])
@@ -360,8 +360,8 @@ export class CartaLaboralComponent implements OnInit {
     notaExpedicion = notaExpedicion.replace("{mes}", mes.toString());
     ano = fecha.getFullYear();
     notaExpedicion = notaExpedicion.replace("{ano}", ano.toString());
-    pdf.add(new Txt(notaExpedicion).margin([50, 100, 0, 0]).end);
-    pdf.add(new Txt("Cordialmente,").margin([50, 80, 0, 0]).end);
+    pdf.add(new Txt(notaExpedicion).margin([50, 80, 0, 0]).end);
+    pdf.add(new Txt("Cordialmente,").margin([50, 30, 0, 0]).end);
     pdf.add(
       await new Img(ObjConfigCL.imagenFirmaDir)
         .margin([50, 0, 0, 0])
@@ -558,8 +558,8 @@ export class CartaLaboralComponent implements OnInit {
     notaExpedicion = notaExpedicion.replace("{mes}", mes.toString());
     ano = fecha.getFullYear();
     notaExpedicion = notaExpedicion.replace("{ano}", ano.toString());
-    pdf.add(new Txt(notaExpedicion).margin([50, 100, 0, 0]).end);
-    pdf.add(new Txt("Cordialmente,").margin([50, 80, 0, 0]).end);
+    pdf.add(new Txt(notaExpedicion).margin([50, 80, 0, 0]).end);
+    pdf.add(new Txt("Cordialmente,").margin([50, 30, 0, 0]).end);
     pdf.add(
       await new Img(ObjConfigCL.imagenFirmaDir)
         .margin([50, 0, 0, 0])
