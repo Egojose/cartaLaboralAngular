@@ -187,7 +187,10 @@ export class CartaLaboralComponent implements OnInit {
     pdf.pageSize("A4");
     pdf.pageMargins([ 40, 100, 40, 100 ]);
     pdf.create().open();
-    window.close();
+    setTimeout(() => {
+      window.close();
+    }, 5000);
+    
   }
 
 
@@ -262,7 +265,9 @@ export class CartaLaboralComponent implements OnInit {
     pdf.pageSize("A4");
     pdf.pageMargins([ 40, 100, 40, 100 ]);
     pdf.create().open();
-    window.close();
+    setTimeout(() => {
+      window.close();
+    }, 5000);
   }
 
   async CrearCartaConSalario(
@@ -371,7 +376,9 @@ export class CartaLaboralComponent implements OnInit {
     pdf.pageSize("A4");
     pdf.pageMargins([ 40, 100, 40, 100 ]);
     pdf.create().open();
-    window.close();
+    setTimeout(() => {
+      window.close();
+    }, 5000);
   }
   async crearCartaSalarioOrdConFun(salario: string, funciones: string, dirigidoA: any, ObjConfigCL: configCartaLaboral, ObjEmpleado: Empleado): Promise<any> {
     let fecha = new Date();
@@ -459,7 +466,9 @@ export class CartaLaboralComponent implements OnInit {
     pdf.pageSize("A4");
     pdf.pageMargins([ 40, 100, 40, 100 ]);
     pdf.create().open();
-    window.close();
+    setTimeout(() => {
+      window.close();
+    }, 5000);
   }
 
   async crearCartaSalarioInt(
@@ -565,7 +574,9 @@ export class CartaLaboralComponent implements OnInit {
     pdf.pageSize("A4");
     pdf.pageMargins([ 40, 100, 40, 100 ]);
     pdf.create().open();
-    window.close();
+    setTimeout(() => {
+      window.close();
+    }, 5000);
   }
 
   async crearCartaSalarioIntConFun( salario: string,
@@ -660,6 +671,8 @@ export class CartaLaboralComponent implements OnInit {
     pdf.pageMargins([ 40, 100, 40, 100 ]);
     pdf.pageSize("A4");
     pdf.create().open();
-    window.close();
+    setTimeout(() => {
+      window.close();
+    }, 5000);
   }
 }
