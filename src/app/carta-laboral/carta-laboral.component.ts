@@ -182,8 +182,10 @@ export class CartaLaboralComponent implements OnInit {
     pdf.add(
       new Txt("_____________________________").margin([50, -30, 0, 0]).end
     );
+    pdf.add(new Txt(ObjConfigCL.nombreDirectorRH).margin([50, 0, 0, 0]).end);
+    pdf.add(new Txt(ObjConfigCL.nombreCargoDir).fontSize(7).margin([50, 0, 0, 0]).end);
     pdf.pageSize("A4");
-    pdf.pageMargins([ 40, 60, 40, 60 ]);
+    pdf.pageMargins([ 40, 100, 40, 100 ]);
     pdf.create().open();
     window.close();
   }
@@ -255,8 +257,10 @@ export class CartaLaboralComponent implements OnInit {
     pdf.add(
       new Txt("_____________________________").margin([50, -30, 0, 0]).end
     );
+    pdf.add(new Txt(ObjConfigCL.nombreDirectorRH).margin([50, 0, 0, 0]).end);
+    pdf.add(new Txt(ObjConfigCL.nombreCargoDir).fontSize(7).margin([50, 0, 0, 0]).end);
     pdf.pageSize("A4");
-    pdf.pageMargins([ 40, 60, 40, 60 ]);
+    pdf.pageMargins([ 40, 100, 40, 100 ]);
     pdf.create().open();
     window.close();
   }
@@ -362,8 +366,10 @@ export class CartaLaboralComponent implements OnInit {
     pdf.add(
       new Txt("_____________________________").margin([50, -30, 0, 0]).end
     );
+    pdf.add(new Txt(ObjConfigCL.nombreDirectorRH).margin([50, 0, 0, 0]).end);
+    pdf.add(new Txt(ObjConfigCL.nombreCargoDir).fontSize(7).margin([50, 0, 0, 0]).end);
     pdf.pageSize("A4");
-    pdf.pageMargins([ 40, 60, 40, 60 ]);
+    pdf.pageMargins([ 40, 100, 40, 100 ]);
     pdf.create().open();
     window.close();
   }
@@ -448,8 +454,10 @@ export class CartaLaboralComponent implements OnInit {
     pdf.add(
       new Txt("_____________________________").margin([50, -30, 0, 0]).end
     );
+    pdf.add(new Txt(ObjConfigCL.nombreDirectorRH).margin([50, 0, 0, 0]).end);
+    pdf.add(new Txt(ObjConfigCL.nombreCargoDir).fontSize(7).margin([50, 0, 0, 0]).end);
     pdf.pageSize("A4");
-    pdf.pageMargins([ 40, 60, 40, 60 ]);
+    pdf.pageMargins([ 40, 100, 40, 100 ]);
     pdf.create().open();
     window.close();
   }
@@ -552,8 +560,10 @@ export class CartaLaboralComponent implements OnInit {
     pdf.add(
       new Txt("_____________________________").margin([50, -30, 0, 0]).end
     );
+    pdf.add(new Txt(ObjConfigCL.nombreDirectorRH).margin([50, 0, 0, 0]).end);
+    pdf.add(new Txt(ObjConfigCL.nombreCargoDir).fontSize(7).margin([50, 0, 0, 0]).end);
     pdf.pageSize("A4");
-    pdf.pageMargins([ 40, 60, 40, 60 ]);
+    pdf.pageMargins([ 40, 100, 40, 100 ]);
     pdf.create().open();
     window.close();
   }
@@ -645,6 +655,9 @@ export class CartaLaboralComponent implements OnInit {
     pdf.add(
       new Txt("_____________________________").margin([50, -30, 0, 0]).end
     );
+    pdf.add(new Txt(ObjConfigCL.nombreDirectorRH).margin([50, 0, 0, 0]).end);
+    pdf.add(new Txt(ObjConfigCL.nombreCargoDir).fontSize(7).margin([50, 0, 0, 0]).end);
+    pdf.pageMargins([ 40, 100, 40, 100 ]);
     pdf.pageSize("A4");
     pdf.create().open();
     window.close();
