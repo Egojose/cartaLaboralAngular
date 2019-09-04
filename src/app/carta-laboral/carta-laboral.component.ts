@@ -155,6 +155,9 @@ export class CartaLaboralComponent implements OnInit {
     pdf.add(
       new Txt(ObjConfigCL.nombreEmpresa).bold().margin([100, 70, 0, 0]).end
     );
+    pdf.add(
+      new Txt("NIT "+ObjConfigCL.nitEmpresa).bold().margin([200, 0, 0, 0]).end
+    );
     pdf.add(new Txt("CERTIFICA").margin([230, 70, 0, 0]).end);
     pdf.add(new Txt(cuerpoCarta).margin([50, 80, 0, 0]).end);
 
@@ -237,6 +240,9 @@ export class CartaLaboralComponent implements OnInit {
     );
     pdf.add(
       new Txt(ObjConfigCL.nombreEmpresa).bold().margin([100, 70, 0, 0]).end
+    );
+    pdf.add(
+      new Txt("NIT "+ObjConfigCL.nitEmpresa).bold().margin([200, 0, 0, 0]).end
     );
     pdf.add(new Txt("CERTIFICA").margin([230, 70, 0, 0]).end);
     pdf.add(new Txt(cuerpoCarta).margin([50, 80, 0, 0]).end);
@@ -349,6 +355,9 @@ export class CartaLaboralComponent implements OnInit {
     pdf.add(
       new Txt(ObjConfigCL.nombreEmpresa).bold().margin([100, 70, 0, 0]).end
     );
+    pdf.add(
+      new Txt("NIT "+ObjConfigCL.nitEmpresa).bold().margin([200, 0, 0, 0]).end
+    );
     pdf.add(new Txt("CERTIFICA").margin([230, 70, 0, 0]).end);
     pdf.add(new Txt(cuerpoCarta).margin([50, 80, 0, 0]).end);
     let notaExpedicion = ObjConfigCL.NotaExpedicion;
@@ -433,6 +442,9 @@ export class CartaLaboralComponent implements OnInit {
     );
     pdf.add(
       new Txt(ObjConfigCL.nombreEmpresa).bold().margin([100, 70, 0, 0]).end
+    );
+    pdf.add(
+      new Txt("NIT "+ObjConfigCL.nitEmpresa).bold().margin([200, 0, 0, 0]).end
     );
     pdf.add(new Txt("CERTIFICA").margin([230, 70, 0, 0]).end);
     pdf.add(new Txt(cuerpoCarta).margin([50, 80, 0, 0]).end);
@@ -545,6 +557,9 @@ export class CartaLaboralComponent implements OnInit {
     pdf.add(
       new Txt(ObjConfigCL.nombreEmpresa).bold().margin([100, 70, 0, 0]).end
     );
+    pdf.add(
+      new Txt("NIT "+ObjConfigCL.nitEmpresa).bold().margin([200, 0, 0, 0]).end
+    );
     pdf.add(new Txt("CERTIFICA").margin([230, 70, 0, 0]).end);
     pdf.add(new Txt(cuerpoCarta).margin([50, 40, 0, 0]).end);
 
@@ -636,6 +651,9 @@ export class CartaLaboralComponent implements OnInit {
     );
     pdf.add(
       new Txt(ObjConfigCL.nombreEmpresa).bold().margin([100, 70, 0, 0]).end
+    );
+    pdf.add(
+      new Txt("NIT "+ObjConfigCL.nitEmpresa).bold().margin([200, 0, 0, 0]).end
     );
     pdf.add(new Txt("CERTIFICA").margin([230, 70, 0, 0]).end);
     pdf.add(new Txt(cuerpoCarta).margin([50, 40, 0, 0]).end);
