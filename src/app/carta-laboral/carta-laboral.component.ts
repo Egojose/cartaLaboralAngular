@@ -350,16 +350,16 @@ export class CartaLaboralComponent implements OnInit {
       await new Img("../assets/imagenes/encabezado.jpg").width(630).build()
     );
     pdf.add(
-      new Txt(ObjEmpleado.sede + ", " + stringFecha).margin([50, 80, 0, 0]).end
+      new Txt(ObjEmpleado.sede + ", " + stringFecha).margin([50, 50, 0, 0]).end
     );
     pdf.add(
-      new Txt(ObjConfigCL.nombreEmpresa).bold().margin([100, 70, 0, 0]).end
+      new Txt(ObjConfigCL.nombreEmpresa).bold().margin([100, 50, 0, 0]).end
     );
     pdf.add(
       new Txt("NIT "+ObjConfigCL.nitEmpresa).bold().margin([200, 0, 0, 0]).end
     );
-    pdf.add(new Txt("CERTIFICA").margin([230, 70, 0, 0]).end);
-    pdf.add(new Txt(cuerpoCarta).margin([50, 80, 0, 0]).end);
+    pdf.add(new Txt("CERTIFICA").margin([230, 50, 0, 0]).end);
+    pdf.add(new Txt(cuerpoCarta).margin([50, 50, 0, 0]).end);
     let notaExpedicion = ObjConfigCL.NotaExpedicion;
     notaExpedicion = notaExpedicion.replace("{dirigidoA}", dirigidoA);
     dia = fecha.getDate();
