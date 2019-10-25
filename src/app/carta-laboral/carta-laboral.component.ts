@@ -16,6 +16,7 @@ export class CartaLaboralComponent implements OnInit {
   ObjConfigCL: configCartaLaboral[];
   ObjEmpleado: Empleado[];
   pdfSrc: any;
+  meses = new Array ("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
 
   constructor(
     private spinnerService: Ng4LoadingSpinnerService,
@@ -52,7 +53,8 @@ export class CartaLaboralComponent implements OnInit {
 
   formatDate(date) {
     var d = date,
-      month = "" + (d.getMonth() + 1),
+      month = "" + this.meses[d.getMonth()],
+      // month = "" + (d.getMonth() + 1),
       day = "" + d.getDate(),
       year = d.getFullYear();
 
@@ -139,8 +141,8 @@ export class CartaLaboralComponent implements OnInit {
     let fechaInicio = ObjEmpleado.fechaIngreso;
     let dia = fechaInicio.getDate();
     cuerpoCarta = cuerpoCarta.replace("{dia}", dia.toString());
-    let mes = "" + (fechaInicio.getMonth() + 1);
-    if (mes.length < 2) mes = "0" + mes;
+    // let mes = "" + (fechaInicio.getMonth() + 1);
+    let mes = this.meses[fechaInicio.getMonth()];    
     cuerpoCarta = cuerpoCarta.replace("{mes}", mes.toString());
     let ano = fechaInicio.getFullYear();
     cuerpoCarta = cuerpoCarta.replace("{ano}", ano.toString());
@@ -169,8 +171,7 @@ export class CartaLaboralComponent implements OnInit {
     notaExpedicion = notaExpedicion.replace("{dirigidoA}", dirigidoA);
     dia = fecha.getDate();
     notaExpedicion = notaExpedicion.replace("{dia}", dia.toString());
-    mes = "" + (fecha.getMonth() + 1);
-    if (mes.length < 2) mes = "0" + mes;
+    mes = this.meses[fechaInicio.getMonth()]; 
     notaExpedicion = notaExpedicion.replace("{mes}", mes.toString());
     ano = fecha.getFullYear();
     notaExpedicion = notaExpedicion.replace("{ano}", ano.toString());
@@ -225,8 +226,8 @@ export class CartaLaboralComponent implements OnInit {
     let fechaInicio = ObjEmpleado.fechaIngreso;
     let dia = fechaInicio.getDate();
     cuerpoCarta = cuerpoCarta.replace("{dia}", dia.toString());
-    let mes = "" + (fechaInicio.getMonth() + 1);
-    if (mes.length < 2) mes = "0" + mes;
+    // let mes = "" + (fechaInicio.getMonth() + 1);
+    let mes = this.meses[fechaInicio.getMonth()];
     cuerpoCarta = cuerpoCarta.replace("{mes}", mes.toString());
     let ano = fechaInicio.getFullYear();
     cuerpoCarta = cuerpoCarta.replace("{ano}", ano.toString());
@@ -250,8 +251,7 @@ export class CartaLaboralComponent implements OnInit {
     notaExpedicion = notaExpedicion.replace("{dirigidoA}", dirigidoA);
     dia = fecha.getDate();
     notaExpedicion = notaExpedicion.replace("{dia}", dia.toString());
-    mes = "" + (fecha.getMonth() + 1);
-    if (mes.length < 2) mes = "0" + mes;
+    mes = this.meses[fechaInicio.getMonth()]; 
     notaExpedicion = notaExpedicion.replace("{mes}", mes.toString());
     ano = fecha.getFullYear();
     notaExpedicion = notaExpedicion.replace("{ano}", ano.toString());
@@ -329,8 +329,8 @@ export class CartaLaboralComponent implements OnInit {
     let fechaInicio = ObjEmpleado.fechaIngreso;
     let dia = fechaInicio.getDate();
     cuerpoCarta = cuerpoCarta.replace("{dia}", dia.toString());
-    let mes = "" + (fechaInicio.getMonth() + 1);
-    if (mes.length < 2) mes = "0" + mes;
+    // let mes = "" + (fechaInicio.getMonth() + 1);
+    let mes = this.meses[fechaInicio.getMonth()];
     cuerpoCarta = cuerpoCarta.replace("{mes}", mes.toString());
     let ano = fechaInicio.getFullYear();
     cuerpoCarta = cuerpoCarta.replace("{ano}", ano.toString());
@@ -364,8 +364,7 @@ export class CartaLaboralComponent implements OnInit {
     notaExpedicion = notaExpedicion.replace("{dirigidoA}", dirigidoA);
     dia = fecha.getDate();
     notaExpedicion = notaExpedicion.replace("{dia}", dia.toString());
-    mes = "" + (fecha.getMonth() + 1);
-    if (mes.length < 2) mes = "0" + mes;
+    mes = this.meses[fechaInicio.getMonth()]; 
     notaExpedicion = notaExpedicion.replace("{mes}", mes.toString());
     ano = fecha.getFullYear();
     notaExpedicion = notaExpedicion.replace("{ano}", ano.toString());
@@ -417,8 +416,8 @@ export class CartaLaboralComponent implements OnInit {
     let fechaInicio = ObjEmpleado.fechaIngreso;
     let dia = fechaInicio.getDate();
     cuerpoCarta = cuerpoCarta.replace("{dia}", dia.toString());
-    let mes = "" + (fechaInicio.getMonth() + 1);
-    if (mes.length < 2) mes = "0" + mes;
+    // let mes = "" + (fechaInicio.getMonth() + 1);
+    let mes = this.meses[fechaInicio.getMonth()];
     cuerpoCarta = cuerpoCarta.replace("{mes}", mes.toString());
     let ano = fechaInicio.getFullYear();
     cuerpoCarta = cuerpoCarta.replace("{ano}", ano.toString());
@@ -457,8 +456,7 @@ export class CartaLaboralComponent implements OnInit {
     notaExpedicion = notaExpedicion.replace("{dirigidoA}", dirigidoA);
     dia = fecha.getDate();
     notaExpedicion = notaExpedicion.replace("{dia}", dia.toString());
-    mes = "" + (fecha.getMonth() + 1);
-    if (mes.length < 2) mes = "0" + mes;
+    mes = this.meses[fechaInicio.getMonth()]; 
     notaExpedicion = notaExpedicion.replace("{mes}", mes.toString());
     ano = fecha.getFullYear();
     notaExpedicion = notaExpedicion.replace("{ano}", ano.toString());
@@ -531,8 +529,8 @@ export class CartaLaboralComponent implements OnInit {
     let fechaInicio = ObjEmpleado.fechaIngreso;
     let dia = fechaInicio.getDate();
     cuerpoCarta = cuerpoCarta.replace("{dia}", dia.toString());
-    let mes = "" + (fechaInicio.getMonth() + 1);
-    if (mes.length < 2) mes = "0" + mes;
+    // let mes = "" + (fechaInicio.getMonth() + 1);
+    let mes = this.meses[fechaInicio.getMonth()];
     cuerpoCarta = cuerpoCarta.replace("{mes}", mes.toString());
     let ano = fechaInicio.getFullYear();
     cuerpoCarta = cuerpoCarta.replace("{ano}", ano.toString());
@@ -568,8 +566,7 @@ export class CartaLaboralComponent implements OnInit {
     notaExpedicion = notaExpedicion.replace("{dirigidoA}", dirigidoA);
     dia = fecha.getDate();
     notaExpedicion = notaExpedicion.replace("{dia}", dia.toString());
-    mes = "" + (fecha.getMonth() + 1);
-    if (mes.length < 2) mes = "0" + mes;
+    mes = this.meses[fechaInicio.getMonth()]; 
     notaExpedicion = notaExpedicion.replace("{mes}", mes.toString());
     ano = fecha.getFullYear();
     notaExpedicion = notaExpedicion.replace("{ano}", ano.toString());
@@ -626,8 +623,8 @@ export class CartaLaboralComponent implements OnInit {
     let fechaInicio = ObjEmpleado.fechaIngreso;
     let dia = fechaInicio.getDate();
     cuerpoCarta = cuerpoCarta.replace("{dia}", dia.toString());
-    let mes = "" + (fechaInicio.getMonth() + 1);
-    if (mes.length < 2) mes = "0" + mes;
+    // let mes = "" + (fechaInicio.getMonth() + 1);
+    let mes = this.meses[fechaInicio.getMonth()];
     cuerpoCarta = cuerpoCarta.replace("{mes}", mes.toString());
     let ano = fechaInicio.getFullYear();
     cuerpoCarta = cuerpoCarta.replace("{ano}", ano.toString());
@@ -668,8 +665,7 @@ export class CartaLaboralComponent implements OnInit {
     notaExpedicion = notaExpedicion.replace("{dirigidoA}", dirigidoA);
     dia = fecha.getDate();
     notaExpedicion = notaExpedicion.replace("{dia}", dia.toString());
-    mes = "" + (fecha.getMonth() + 1);
-    if (mes.length < 2) mes = "0" + mes;
+    mes = this.meses[fechaInicio.getMonth()]; 
     notaExpedicion = notaExpedicion.replace("{mes}", mes.toString());
     ano = fecha.getFullYear();
     notaExpedicion = notaExpedicion.replace("{ano}", ano.toString());
