@@ -142,7 +142,7 @@ export class CartaLaboralComponent implements OnInit {
     let dia = fechaInicio.getDate();
     cuerpoCarta = cuerpoCarta.replace("{dia}", dia.toString());
     // let mes = "" + (fechaInicio.getMonth() + 1);
-    let mes = this.meses[fechaInicio.getMonth()];    
+    let mes = this.meses[fecha.getMonth()];    
     cuerpoCarta = cuerpoCarta.replace("{mes}", mes.toString());
     let ano = fechaInicio.getFullYear();
     cuerpoCarta = cuerpoCarta.replace("{ano}", ano.toString());
@@ -171,7 +171,7 @@ export class CartaLaboralComponent implements OnInit {
     notaExpedicion = notaExpedicion.replace("{dirigidoA}", dirigidoA);
     dia = fecha.getDate();
     notaExpedicion = notaExpedicion.replace("{dia}", dia.toString());
-    mes = this.meses[fechaInicio.getMonth()]; 
+    mes = this.meses[fecha.getMonth()]; 
     notaExpedicion = notaExpedicion.replace("{mes}", mes.toString());
     ano = fecha.getFullYear();
     notaExpedicion = notaExpedicion.replace("{ano}", ano.toString());
@@ -251,7 +251,7 @@ export class CartaLaboralComponent implements OnInit {
     notaExpedicion = notaExpedicion.replace("{dirigidoA}", dirigidoA);
     dia = fecha.getDate();
     notaExpedicion = notaExpedicion.replace("{dia}", dia.toString());
-    mes = this.meses[fechaInicio.getMonth()]; 
+    mes = this.meses[fecha.getMonth()]; 
     notaExpedicion = notaExpedicion.replace("{mes}", mes.toString());
     ano = fecha.getFullYear();
     notaExpedicion = notaExpedicion.replace("{ano}", ano.toString());
@@ -364,7 +364,7 @@ export class CartaLaboralComponent implements OnInit {
     notaExpedicion = notaExpedicion.replace("{dirigidoA}", dirigidoA);
     dia = fecha.getDate();
     notaExpedicion = notaExpedicion.replace("{dia}", dia.toString());
-    mes = this.meses[fechaInicio.getMonth()]; 
+    mes = this.meses[fecha.getMonth()]; 
     notaExpedicion = notaExpedicion.replace("{mes}", mes.toString());
     ano = fecha.getFullYear();
     notaExpedicion = notaExpedicion.replace("{ano}", ano.toString());
@@ -456,7 +456,7 @@ export class CartaLaboralComponent implements OnInit {
     notaExpedicion = notaExpedicion.replace("{dirigidoA}", dirigidoA);
     dia = fecha.getDate();
     notaExpedicion = notaExpedicion.replace("{dia}", dia.toString());
-    mes = this.meses[fechaInicio.getMonth()]; 
+    mes = this.meses[fecha.getMonth()]; 
     notaExpedicion = notaExpedicion.replace("{mes}", mes.toString());
     ano = fecha.getFullYear();
     notaExpedicion = notaExpedicion.replace("{ano}", ano.toString());
@@ -566,7 +566,7 @@ export class CartaLaboralComponent implements OnInit {
     notaExpedicion = notaExpedicion.replace("{dirigidoA}", dirigidoA);
     dia = fecha.getDate();
     notaExpedicion = notaExpedicion.replace("{dia}", dia.toString());
-    mes = this.meses[fechaInicio.getMonth()]; 
+    mes = this.meses[fecha.getMonth()]; 
     notaExpedicion = notaExpedicion.replace("{mes}", mes.toString());
     ano = fecha.getFullYear();
     notaExpedicion = notaExpedicion.replace("{ano}", ano.toString());
@@ -665,7 +665,7 @@ export class CartaLaboralComponent implements OnInit {
     notaExpedicion = notaExpedicion.replace("{dirigidoA}", dirigidoA);
     dia = fecha.getDate();
     notaExpedicion = notaExpedicion.replace("{dia}", dia.toString());
-    mes = this.meses[fechaInicio.getMonth()]; 
+    mes = this.meses[fecha.getMonth()]; 
     notaExpedicion = notaExpedicion.replace("{mes}", mes.toString());
     ano = fecha.getFullYear();
     notaExpedicion = notaExpedicion.replace("{ano}", ano.toString());
