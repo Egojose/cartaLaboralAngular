@@ -22,7 +22,8 @@ export class Empleado {
         public fechaSalida: Date,
         public carrera: string,
         public universidad: string,
-        public sede: string   
+        public sede: string,
+        public funciones: string   
         ){       
     }
 
@@ -53,7 +54,8 @@ export class Empleado {
             new Date(element.FechaSalida),
             element.Carrera,
             element.Universidad,
-            element.Sede);
+            element.Sede,
+            element.Funciones);
     }
 
     public static fromJsonList(elements: any) {
