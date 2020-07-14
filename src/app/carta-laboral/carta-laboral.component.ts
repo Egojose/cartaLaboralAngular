@@ -117,12 +117,13 @@ export class CartaLaboralComponent implements OnInit {
     let nombre =
       ObjEmpleado.nombre2 === ""
         ? ObjEmpleado.nombre1
-        : ObjEmpleado.nombre1 + " " + ObjEmpleado.nombre2;
+        : `${ObjEmpleado.nombre1} ${ObjEmpleado.nombre2}`;
     let apellido =
       ObjEmpleado.apellido2 === ""
         ? ObjEmpleado.apellido1
-        : ObjEmpleado.apellido1 + " " + ObjEmpleado.apellido2;
-    let nombreCompleto = nombre + " " + apellido;
+        : `${ObjEmpleado.apellido1} ${ObjEmpleado.apellido2}`;
+        let nombreCompleto = `${nombre} ${apellido}`
+    // let nombreCompleto = nombre + " " + apellido;
     let cuerpoCarta = ObjConfigCL.CuerpoConSalario;
     cuerpoCarta = cuerpoCarta.replace("{nombre}", nombreCompleto);
     cuerpoCarta = cuerpoCarta.replace("{cedula}", ObjEmpleado.numeroDocumento);
@@ -155,12 +156,12 @@ export class CartaLaboralComponent implements OnInit {
       await new Img("../assets/imagenes/encabezado.jpg").width(630).build()
     );
     pdf.add(
-      new Txt(ObjEmpleado.sede + ", " + stringFecha).margin([50, 80, 0, 0]).end
+      new Txt(`${ObjEmpleado.sede}, ${stringFecha}`).margin([50, 80, 0, 0]).end
     );
     pdf.add(
       new Txt(ObjConfigCL.nombreEmpresa).bold().margin([100, 70, 0, 0]).end
     );
-    pdf.add(new Txt("CERTIFICA").margin([230, 70, 0, 0]).end);
+    pdf.add(new Txt("CERTIFICA").bold().margin([230, 70, 0, 0]).end);
     pdf.add(new Txt(cuerpoCarta).margin([50, 80, 0, 0]).end);
     let notaExpedicion = ObjConfigCL.NotaExpedicion;
     notaExpedicion = notaExpedicion.replace("{dirigidoA}", dirigidoA);
@@ -184,5 +185,9 @@ export class CartaLaboralComponent implements OnInit {
     );
     pdf.pageSize("A4");
     pdf.create().open();
+  }
+
+  CrearCartaConFunciones() {
+    
   }
 }
