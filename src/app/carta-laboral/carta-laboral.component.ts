@@ -142,7 +142,7 @@ export class CartaLaboralComponent implements OnInit {
     let dia = fechaInicio.getDate();
     cuerpoCarta = cuerpoCarta.replace("{dia}", dia.toString());
     // let mes = "" + (fechaInicio.getMonth() + 1);
-    let mes = this.meses[fecha.getMonth()];    
+    let mes = this.meses[fechaInicio.getMonth()];    
     cuerpoCarta = cuerpoCarta.replace("{mes}", mes.toString());
     let ano = fechaInicio.getFullYear();
     cuerpoCarta = cuerpoCarta.replace("{ano}", ano.toString());
